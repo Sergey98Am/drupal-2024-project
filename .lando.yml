@@ -1,0 +1,6 @@
+name: drupal-2024-project
+recipe: pantheon
+config:
+  framework: drupal8
+  site: drupal-2024-project
+  id: bbbe29d7-0fe0-4c91-b29e-e3169755c0e7
