@@ -1,0 +1,22 @@
+uuid: d4e4a1d5-26ff-43b6-8f11-09d604ee1529
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - drupak_starterkit
+_core:
+  default_config_hash: erQSEZF2XUjNmgTl0uNRBzmg18ZGXwUcw2FhApoeuHk
+id: drupak_starterkit_content
+theme: drupak_starterkit
+region: content
+weight: 0
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  label_display: '0'
+  provider: system
+visibility: {  }

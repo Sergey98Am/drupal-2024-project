@@ -1,0 +1,20 @@
+uuid: 65896f88-599b-4305-8347-95f2f610b6b0
+langcode: en
+status: true
+dependencies:
+  theme:
+    - drupak_starterkit
+_core:
+  default_config_hash: Q9_2whdOj1YIomfvsIfopROW4FT_X5pY0DjdOiOaQ5U
+id: drupak_starterkit_primary_admin_actions
+theme: drupak_starterkit
+region: highlighted
+weight: -5
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  label_display: '0'
+  provider: core
+visibility: {  }

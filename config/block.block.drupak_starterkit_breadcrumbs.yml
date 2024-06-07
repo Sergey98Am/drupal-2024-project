@@ -1,0 +1,22 @@
+uuid: 0e190c34-c022-4bdd-b54f-4710bbb49ad0
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - drupak_starterkit
+_core:
+  default_config_hash: VhBzWb7lMRtIOg9G7VSw_0uopi-7zXeHq4vXqqV1HFE
+id: drupak_starterkit_breadcrumbs
+theme: drupak_starterkit
+region: breadcrumb
+weight: 0
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  label_display: '0'
+  provider: system
+visibility: {  }

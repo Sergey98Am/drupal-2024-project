@@ -1,0 +1,22 @@
+uuid: 318b25cf-df47-4f9c-ab31-3670186163fd
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - drupak_starterkit
+_core:
+  default_config_hash: eYL19CLDyinGTWYQfBD1DswWzglEotE_kHnHx3AxTXM
+id: drupak_starterkit_powered
+theme: drupak_starterkit
+region: sidebar_first
+weight: 0
+provider: null
+plugin: system_powered_by_block
+settings:
+  id: system_powered_by_block
+  label: 'Powered by Drupal'
+  label_display: '0'
+  provider: system
+visibility: {  }

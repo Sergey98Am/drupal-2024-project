@@ -1,0 +1,23 @@
+uuid: 23635f80-46bb-4e95-93d6-091b2095075d
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+  theme:
+    - drupak_starterkit
+_core:
+  default_config_hash: 0gq3VPg-_UM69FCCWurLFIrrnIjC2HLKhwo9iQNtcUo
+id: drupak_starterkit_syndicate
+theme: drupak_starterkit
+region: sidebar_first
+weight: 0
+provider: null
+plugin: node_syndicate_block
+settings:
+  id: node_syndicate_block
+  label: 'RSS feed'
+  label_display: '0'
+  provider: node
+  block_count: 10
+visibility: {  }
