@@ -4,3 +4,27 @@ config:
   framework: drupal8
   site: drupal-2024-project
   id: bbbe29d7-0fe0-4c91-b29e-e3169755c0e7
+services:
+  appserver:
+    build_as_root:
+      - curl -sL https://deb.nodesource.com/setup_16.x | bash -
+      - apt-get install -qq -y nodejs
+      - chown -R www-data /usr/lib/node_modules
+      - chown -R www-data /usr/bin
+      - npm install --silent -g npm
+    run_as_root:
+      - "a2enmod headers"
+      - "service apache2 reload"
+    overrides:
+      ports:
+        - 6006:6006
+        - 6007:6007
+tooling:
+  node:
+    service: appserver
+  npm:
+    service: appserver
+  npx:
+    service: appserver
+  yarn:
+    service: appserver
